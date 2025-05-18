@@ -1,0 +1,58 @@
+# === MiniTano Studios – Official Unity .gitignore ===
+
+# === Operating System Files ===
+.DS_Store
+Thumbs.db
+
+# === IDEs & Editor Files ===
+.vscode/
+.idea/
+*.suo
+*.user
+*.userprefs
+
+# === Unity Generated Folders ===
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+MemoryCaptures/
+UserSettings/ # Editor preferences (should stay local only)
+
+# === Unity Auto-Generated Files ===
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.csproj
+*.unityproj
+*.sln
+*.sln.*
+*.tmp
+*.bak
+*.backup
+*.log
+
+# === Unity Asset Store ===
+.assetstoretools/
+
+# === Build Artifacts ===
+*.apk
+*.aab
+*.exe
+*.app
+*.unitypackage
+
+# === Miscellaneous ===
+/ExportedObj/
+/.cache/
+*.log
+*.vsconfig
+
+# === Notes ===
+# This .gitignore is designed to keep MiniTano Studios projects clean,
+# organized, and studio-friendly for all Unity-based games.
