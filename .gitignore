@@ -1,4 +1,4 @@
-# === MiniTano Studios – Official Unity .gitignore ===
+# === Unity .gitignore ===
 
 # === Operating System Files ===
 .DS_Store
@@ -52,7 +52,3 @@ UserSettings/ # Editor preferences (should stay local only)
 /.cache/
 *.log
 *.vsconfig
-
-# === Notes ===
-# This .gitignore is designed to keep MiniTano Studios projects clean,
-# organized, and studio-friendly for all Unity-based games.
