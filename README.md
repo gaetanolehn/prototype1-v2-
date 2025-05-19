@@ -14,50 +14,58 @@ This project demonstrates:
 
 ---
 
-## ✨ Improvements in v2
+## ✅ Features Completed (Stage 1)
 
-Compared to my first version, this updated build includes:
-- ✅ Clean, well-documented C# scripts
-- ✅ Consistent naming conventions
-- ✅ XML summary tags for methods and classes
-- ✅ Tooltip attributes for serialized fields
-- ✅ Folder structure and asset organization
-- ✅ Version control via Git & GitHub
+### 🛞 Player Systems
+- Modular tank movement with acceleration
+- Turret and barrel aiming (mouse-based)
+- Fire delay and reload system (2 seconds each)
+- Infinite reserve ammo with 5-shell clip
+- Projectile shell logic (in progress)
+
+### 📊 UI Systems
+- Player health bar (top-left)
+- Ammo count + ammo icon (bottom-right)
+- Fire cooldown bar (`Overheat…`) and reload bar (`Reloading…`)
+- Dynamic display of cooldown/reload progress
+
+### 💥 Effects & Audio
+- Background music (looping)
+- Muzzle flash particle effect
+- Firing and impact sound placeholders
+- Cursor lock and smooth camera follow (partial)
+
+---
+
+## 🐞 Known Issues & To-Do
+
+- [ ] Turret & camera rotation speeds need tuning
+- [ ] Wheel visuals do not spin correctly when turning in place
+- [ ] Background music cuts off when firing projectiles
+- [ ] Projectiles fail to instantiate properly
+- [ ] Player script needs raycasting improvements
+- [ ] Organize scene hierarchy for clarity
 
 ---
 
-## 🧠 Skills Demonstrated
-
-- Unity physics system (Rigidbody)
-- C# scripting and MonoBehaviour lifecycle
-- GameObject components and transforms
-- Clean code principles
-- GitHub project management and collaboration readiness
-
----
-
-## 🚀 How to Play
-
-1. Clone the repository:
-2. Open the project with Unity (2021.x or later recommended).
-3. Load the scene located in `/Assets/Scenes/`.
-4. Press **Play** to test the prototype.
-
-Use **WASD or arrow keys** to move and steer the vehicle.
-
----
 ## 📸 Screenshots
 
-> *(Screenshots will be added soon.)*
+### 🧱 Unity Editor Screenshot (as of 05.19.2025)
+![Unity Editor Screenshot](./Assets/Documentation/EditorScreenShot.png)
+
+### 🎬 Gameplay GIF Preview (as of 05.19.2025)
+![Gameplay GIF](./Assets/Documentation/Animation1.gif)
+
+
 
 ---
 
-## 🧩 Next Steps
+## 🔜 Next Steps
 
-- Polish the level layout and obstacles
-- Add sound effects and visual feedback
-- Experiment with camera follow or chase modes
-- Consider expanding into a checkpoint-based race game
+- Finalize projectile behavior and impact effects
+- Add enemy AI and health bar interaction
+- Clean up the Editor hierarchy and naming
+- Finalize audio
 
 ---
 
@@ -71,5 +79,17 @@ Game Developer | Unity Enthusiast
 
 ## 📝 License
 
-This project is for educational and portfolio use.  
+This project is for educational and portfolio use.
+This project is license under the [MIT License](LICENSE).
+
 Unity and the *Create with Code* curriculum © Unity Technologies.
+
+---
+
+## ⚠️ Asset Use Restriction
+
+All assets included in this project are for demonstration purposes only.  
+They are not licensed for reuse, redistribution, or commercial use.
+
+Please do **not** extract or repurpose any part of this project’s assets unless you have proper authorization from the original asset creators.
+

@@ -27,6 +27,15 @@ public class TankWeaponController : MonoBehaviour
     private bool isReloading = false;
     private bool isOnCooldown = false;
 
+    [Header("Audio")]
+    [SerializeField] private ParticleSystem muzzleFlash;
+    [SerializeField] private AudioSource fireSound;
+
+    [Header("Projectile Settings")]
+    [SerializeField] private GameObject shellPrefab;
+    [Tooltip("Add the Muzzle Flash object here")]
+    [SerializeField] private Transform firePoint;
+
     #endregion
 
     #region Game Cycle Methods
@@ -54,6 +63,9 @@ public class TankWeaponController : MonoBehaviour
     private void Fire()
     {
         currentAmmo--;
+        Instantiate(shellPrefab, firePoint.position, firePoint.rotation);
+        muzzleFlash?.Play();
+        fireSound?.Play();
         UpdateAmmoUI();
         Debug.Log("Fired shell! Remaining: " + currentAmmo);
         StartCoroutine(FireCooldownRoutine());
